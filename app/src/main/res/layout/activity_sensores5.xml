@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jesus.sensores05.Sensores5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SENSOR DE ORIENTACION"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AZIMUT"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#0800ff"/>
+    <TextView
+        android:id="@+id/azimut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="azimut"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERTICALIDAD"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#0800ff"/>
+    <TextView
+        android:id="@+id/verticalidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="verticalidad"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INCLINACION LATERAL"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#0800ff"/>
+    <TextView
+        android:id="@+id/lateralidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lateralidad"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORIENTACION"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#0800ff"/>
+    <TextView
+        android:id="@+id/orientacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="orientacion"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUMERO DE LECTURAS"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textColor="#0800ff"/>
+    <TextView
+        android:id="@+id/numeroLecturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="numero de lecturas"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+</LinearLayout>
