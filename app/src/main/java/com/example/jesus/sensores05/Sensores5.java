@@ -7,12 +7,14 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
 public class Sensores5 extends AppCompatActivity implements SensorEventListener{
-//SensorManager sensorManager;
+SensorManager sensorManager;
 Sensor orienta;
 int contador;
 double azimut =0;
@@ -34,9 +36,10 @@ TextView tvContador;
         tvOrientacion = (TextView) findViewById(R.id.orientacion);
         tvContador = (TextView) findViewById(R.id.numeroLecturas);
 
-        SensorManager SensorManager = (android.hardware.SensorManager)getSystemService(Context.SENSOR_SERVICE);
-        orienta = SensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
-        SensorManager.registerListener(this,orienta,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
+        orienta = sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
+        sensorManager.registerListener(this,orienta,SensorManager.SENSOR_DELAY_NORMAL);
+
 
         runOnUiThread(new CambiaTexto());
     }
@@ -44,20 +47,19 @@ TextView tvContador;
     @Override
     protected void onResume() {
         super.onResume();
-        SensorManager SensorManager = (android.hardware.SensorManager)getSystemService(Context.SENSOR_SERVICE);
-        SensorManager.registerListener(this, orienta,SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(this, orienta,SensorManager.SENSOR_DELAY_NORMAL);
 
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        SensorManager SensorManager = (android.hardware.SensorManager)getSystemService(Context.SENSOR_SERVICE);
-        SensorManager.unregisterListener(this);
+        sensorManager.unregisterListener(this);
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
+
         azimut = event.values[0];
         vertical = event.values[1];
         lateral = event.values[2];
@@ -78,6 +80,8 @@ TextView tvContador;
 
         if (lateral>50) orientacion="LATERAL IZQUIERDA";
         if (lateral<-50) orientacion="LATERAL DERECHA";
+
+
     }
 
     @Override
@@ -92,7 +96,7 @@ TextView tvContador;
             tvLateral.setText(""+lateral);
             tvOrientacion.setText(""+orientacion);
             tvContador.setText(""+contador);
-
         }
+
     }
 }

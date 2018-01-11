@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sensores05.iml" filepath="$PROJECT_DIR$/Sensores05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sensores05.iml" filepath="$PROJECT_DIR$/.idea/Sensores05.iml" />
+      <module fileurl="file://C:\ProyectosAndroidStudio\Sensores05\Sensores05.iml" filepath="C:\ProyectosAndroidStudio\Sensores05\Sensores05.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\ProyectosAndroidStudio\Sensores05\app\app.iml" filepath="C:\ProyectosAndroidStudio\Sensores05\app\app.iml" />
     </modules>
   </component>
 </project>
